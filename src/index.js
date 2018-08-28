@@ -1,16 +1,18 @@
-import React from "react";
+import React, { Component } from "react";
 import ReactDOM from "react-dom";
-
+// Estilos css
 import "./styles.css";
 
-function App() {
-  return (
-    <div className="App">
-      <h1>Hola React</h1>
-      <h2>Ejercicios con React</h2>
-    </div>
-  );
+export default class Welcome extends React.Component {
+  render() {
+    return (
+      <div className="Bienvenida">
+        <h1>Hola React</h1>
+        <h2>Ejercicios con React</h2>
+      </div>
+    );
+  }
 }
 
 const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+ReactDOM.render(<Welcome />, rootElement);
