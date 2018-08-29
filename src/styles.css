@@ -7,3 +7,23 @@ body {
   background-color: rgb(27, 27, 27);
   color: white;
 }
+
+button {
+  padding: 10px;
+  background: blue;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: white;
+  border: none;
+  border-radius: 10px;
+  color: blue;
+}
+
+button:focus {
+  outline: none;
+}
